@@ -5,7 +5,7 @@ using UnityEngine;
 public class LixoSpawnerController : MonoBehaviour
 {
     public float maximum;
-    
+
     public float fixedY;
 
     public float fixedZ;
@@ -16,9 +16,7 @@ public class LixoSpawnerController : MonoBehaviour
 
     public int maxPoints;
 
-    public int points = 0;
-
-}   
+    public int points = 0;   
 
     void Start() {
     StartCoroutine(SpawnRoutine());
@@ -30,13 +28,14 @@ public class LixoSpawnerController : MonoBehaviour
     }
 
     IEnumerator SpawnRoutine() {
-    while (points < MaxPoints) {
-        Instantiate(Lixo,
-            new Vector3(Random.Range(-maximumX, maximumX + 1),
+    while (points < maxPoints) {
+        Instantiate(lixo,
+            new Vector3(Random.Range(-maximum, maximum + 1),
                 fixedY,
                 fixedZ),
             Quaternion.identity);
-        yield return new WaitForSeconds(timer);
+        yield return new WaitForSeconds(time);
     }
+}
 }
 
