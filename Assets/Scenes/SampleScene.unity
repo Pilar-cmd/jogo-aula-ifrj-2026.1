@@ -292,7 +292,7 @@ MonoBehaviour:
   fixedZ: 0
   time: 2
   lixo: {fileID: 1300123336688305548, guid: 6ff6cfdd2a397b64cbbad8c64792bfca, type: 3}
-  maxPoints: 1
+  maxPoints: 10
   points: 0
   pointsText: {fileID: 77482271}
   victoryText: {fileID: 716270282}

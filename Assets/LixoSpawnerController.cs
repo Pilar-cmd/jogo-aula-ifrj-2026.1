@@ -47,7 +47,7 @@ public class LixoSpawnerController : MonoBehaviour
 
 public void AddToPoints(int value) {
     points += value;
-    pointsText.text = "Points: " + points.ToString();
+    pointsText.text = "Pontos: " + points.ToString();
 }
 }
 
