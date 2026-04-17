@@ -25,7 +25,7 @@ public class LixoSpawnerController : MonoBehaviour
 
     void Start() {
     StartCoroutine(SpawnRoutine());
-    victory.Text.gameObject.SetActive(false);
+    victoryText.gameObject.SetActive(false);
     }
 
     void Update()
@@ -42,7 +42,7 @@ public class LixoSpawnerController : MonoBehaviour
             Quaternion.identity);
         yield return new WaitForSeconds(time);
     }
-    victory.Text.gameObject.SetActive(true);
+    victoryText.gameObject.SetActive(true);
 }
 
 public void AddToPoints(int value) {
