@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class LixoSpawnerController : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class LixoSpawnerController : MonoBehaviour
     public int maxPoints;
 
     public int points = 0;   
+
+    public TMP_Text pointsText;
 
     void Start() {
     StartCoroutine(SpawnRoutine());
@@ -36,6 +39,11 @@ public class LixoSpawnerController : MonoBehaviour
             Quaternion.identity);
         yield return new WaitForSeconds(time);
     }
+}
+
+public void AddToPoints(int value) {
+    points += value;
+    pointsText.text = "Points: " + points.ToString();
 }
 }
 
