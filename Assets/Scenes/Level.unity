@@ -931,6 +931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f538c5a9d7313fb4584fff426eaa2a8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  source: {fileID: 1372548742}
   lixoSpawnerController: {fileID: 463347434}
 --- !u!82 &1372548742
 AudioSource:
