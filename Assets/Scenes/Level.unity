@@ -1353,6 +1353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18c28ae1586d6664da24c2e36602d837, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lixoSpawnerController: {fileID: 0}
 --- !u!65 &2026576425
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1644,6 +1645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18c28ae1586d6664da24c2e36602d837, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lixoSpawnerController: {fileID: 463347434}
 --- !u!1001 &1300123336092727242
 PrefabInstance:
   m_ObjectHideFlags: 0
